@@ -14,8 +14,13 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "bin": { "device-frames": "./dist/cli.js" },
-  "files": ["dist", "frames"],
+  "bin": {
+    "device-frames": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "frames"
+  ],
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
@@ -26,10 +31,16 @@
     "sharp": "^0.33.0"
   },
   "devDependencies": {
+    "@types/node": "^25.3.3",
     "tsup": "^8.0.0",
     "typescript": "^5.5.0",
     "vitest": "^2.0.0"
   },
-  "publishConfig": { "access": "public" },
-  "repository": { "type": "git", "url": "https://github.com/storasource/device-frames" }
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storasource/device-frames"
+  }
 }
